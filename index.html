@@ -8,6 +8,42 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <h1>Welcome! to bookMania</h1>
+    <header>
+      <h1>bookMania</h1>
+    </header>
+    <div class="add-new-book">
+      <button id="new-book">+</button>
+    </div>
+    <section id="popup" class="modal-window">
+      <form id="book-form">
+        <div class="form-container">
+          <div class="form-heading">
+            <h2>New Book</h2>
+          </div>
+          <div class="input-container">
+            <label for="title"></label>
+            <input type="text" name="title" id="title" required />
+            <span>Title</span>
+            <br />
+            <label for="author"></label>
+            <input type="text" name="author" id="author" required />
+            <span>Author</span>
+            <br />
+            <label for="pages"></label>
+            <input type="text" name="pages" id="pages" required />
+            <span>Pages</span>
+            <br />
+            <span class="checkbox"> Read </span>
+            <label for="read">
+              <input type="checkbox" class="read-status" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="submit-btn">
+              <button type="submit" class="submitBtn">Add to Library</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
