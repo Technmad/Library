@@ -21,22 +21,18 @@
             <h2>New Book</h2>
           </div>
           <div class="input-container">
-            <label for="title"></label>
+            <label for="title">Title : </label>
             <input type="text" name="title" id="title" required />
-            <span>Title</span>
             <br />
-            <label for="author"></label>
+            <label for="author">Author :</label>
             <input type="text" name="author" id="author" required />
-            <span>Author</span>
             <br />
-            <label for="pages"></label>
+            <label for="pages">Pages : </label>
             <input type="text" name="pages" id="pages" required />
-            <span>Pages</span>
             <br />
-            <span class="checkbox"> Read </span>
             <label for="read">
-              <input type="checkbox" class="read-status" />
-              <span class="checkmark"></span>
+              Read
+              <input type="checkbox" id="read-status" />
             </label>
             <div class="submit-btn">
               <button type="submit" id="submitBtn">Add to Library</button>
@@ -46,10 +42,7 @@
       </form>
     </section>
     <section class="book-shelf">
-      <div class="book-card">
-        <h3>Your bookMania is empty</h3>
-        <p>Click the <strong>+</strong> button to add a new book</p>
-      </div>
+      <div id="display-container"></div>
     </section>
   </body>
 </html>
